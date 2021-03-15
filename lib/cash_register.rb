@@ -19,10 +19,6 @@ class CashRegister
         self.discount == 0? "There is no discount to apply.": "After the discount, the total comes to $#{self.total}."
     end
 
-    def items
-      @items
-    end
-
     def void_last_transaction
         self.total -= @last_transaction[1] * @last_transaction[2]
     end
